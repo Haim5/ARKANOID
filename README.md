@@ -2,7 +2,7 @@
 
 ### About the project
 This project is my take on the classic game [Arkanoid](https://en.wikipedia.org/wiki/Arkanoid). 
-### Technologies
+### Languages
 - Java.
 ### How to run it 
 1. Download the zip file.
