@@ -1,0 +1,20 @@
+<project default="compile">
+
+    <property name="classpath" value="bin:biuoop-1.4.jar" />
+
+    <target name="compile">
+        <mkdir dir="bin"/>
+        <javac classpath="${classpath}" srcdir="src" destdir="bin" includeantruntime="false"/>
+    </target>
+
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+
+    <target name="run" depends="compile" >
+        <java classname="Game" classpath="${classpath}" fork="true">
+            <arg line="${args}"/>
+        </java>
+    </target>
+
+</project>
